@@ -1,7 +1,7 @@
 import React from "react"
 import "./App.css"
 import { motion } from "framer-motion"
-import { Landing, Product } from "./Components"
+import { AddedValue, Landing, Product } from "./Components"
 //const container = {
 //	hidden: { opacity: 0, x: -100 },
 //	show: {
@@ -23,7 +23,8 @@ function App() {
 	return (
 		<div className="bg-black">
 			<Landing />
-			<Product />
+			{/*<Product />*/}
+			<AddedValue />
 		</div>
 	)
 }

@@ -12,11 +12,14 @@ ul {
 
 .parallex-image {
 	background-position: bottom;
-	background-size: contain;
+	background-size: cover;
 }
 .parallex-image-front {
-	background-image: url("./images/frontImage.png");
+	background-image: url("./images/sensor.png");
 }
 .parallex-image-back {
-	background-image: url("./images/backImage.png");
+	background-image: url("./images/sensor.png");
+}
+.style-it {
+	background: #000;
 }
