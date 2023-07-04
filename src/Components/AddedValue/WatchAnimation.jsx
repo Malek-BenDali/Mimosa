@@ -1,6 +1,9 @@
 import React from "react"
 import { motion } from "framer-motion"
 export default function () {
+	// produit -> we can mesure your heartbeats
+	// we can mesure unmesurable things
+	//what ever you think we can, we can more if you wan a prove send us a message and we will send u a video
 	return (
 		<>
 			<svg

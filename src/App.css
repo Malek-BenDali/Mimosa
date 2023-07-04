@@ -2,6 +2,15 @@ ul {
 	list-style-type: none;
 }
 
+.linear {
+	background: rgb(13, 152, 186);
+	background: linear-gradient(
+		90deg,
+		rgba(13, 152, 186, 1) 0%,
+		rgba(255, 255, 255, 1) 100%
+	);
+}
+
 .img-background {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
 		url("./images/sensor.png");
