@@ -2,13 +2,25 @@ ul {
 	list-style-type: none;
 }
 
-.linear {
+.linear-x {
 	background: rgb(13, 152, 186);
 	background: linear-gradient(
 		90deg,
 		rgba(13, 152, 186, 1) 0%,
-		rgba(255, 255, 255, 1) 100%
+		rgba(236, 254, 255, 1) 100%
 	);
+}
+.linear-y {
+	background: rgb(13, 152, 186);
+	background: linear-gradient(
+		rgba(13, 152, 186, 0.5) 0%,
+		rgba(255, 255, 255, 1) 10%
+	);
+}
+.text-linear {
+	background: -webkit-linear-gradient(45deg, #a1cb34, #fff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .img-background {
