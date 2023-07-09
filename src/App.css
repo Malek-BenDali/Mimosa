@@ -14,7 +14,7 @@ ul {
 	background: rgb(13, 152, 186);
 	background: linear-gradient(
 		rgba(13, 152, 186, 0.5) 0%,
-		rgba(255, 255, 255, 1) 10%
+		rgba(255, 255, 255, 1) 100%
 	);
 }
 .text-linear {

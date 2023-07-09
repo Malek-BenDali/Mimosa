@@ -4,27 +4,22 @@ import { sensor } from "../images"
 export default function () {
 	return (
 		<>
-			<div className=" relative  flex items-center min-h-[80vh] bg-cyan-50 px-[8%] py-5 sm:py-0 sm:flex-row flex-col sm:justify-between gap-6">
+			<div className=" relative flex items-center min-h-[80vh] bg-cyan-50 px-[8%] py-5 sm:py-0 sm:flex-row flex-col sm:justify-between gap-6">
 				<div className="box-border w-full sm:w-2/6 text-blue-800 sm:text-base text-xs ">
 					<h1 className="font-medium mb-3">
 						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus,
 						pariatur.
 					</h1>
 					<p>
-						Introducing an innovative sensor embedded within chairs,
-						revolutionizing the way we monitor vital signs. This discreet and
-						comfortable sensor effortlessly measures both heart rate and
-						respiratory rate, providing real-time insights into cardiovascular
-						health and breathing patterns. With its seamless integration, this
-						sensor transforms chairs into personal health monitors, enabling
-						effortless and continuous biometric data capture. Users can track
-						their well-being trends, detect anomalies, and make informed
-						decisions about their health through a user-friendly interface.
-						Connectable to smartphones and wearable devices, this sensor
-						promotes proactive health management and empowers individuals to
-						prioritize their well-being. Experience the future of personalized
-						health monitoring with this embedded sensor, enhancing wellness in
-						various settings.
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+						natus et quidem soluta, inventore voluptatum perspiciatis fugiat
+						eligendi error incidunt? Quas, esse culpa. Vitae nulla tenetur
+						voluptatum soluta! Delectus cupiditate sunt perspiciatis quibusdam!
+						Deleniti minima nam sequi iusto voluptates consequuntur labore et
+						ratione, iste quam enim voluptas ex iure hic architecto
+						exercitationem asperiores sunt nulla temporibus explicabo? In qui
+						tempora maxime voluptates officiis, nemo nostrum fugit molestias
+						delectus, dolorem sunt?
 					</p>
 				</div>
 				{/*<motion.img
@@ -64,9 +59,10 @@ export default function () {
 									fill="white"
 								/>
 								<motion.path
-									initial={{ x: 0 }}
-									animate={{ x: 305 }}
-									style={{ borderWidth: "1px" }}
+									className={"origin-bottom-left"}
+									initial={{ rotateY: 0 }}
+									animate={{ rotateY: "160deg" }}
+									style={{ borderWidth: "1px", transformOrigin: "top left" }}
 									transition={{
 										duration: 2,
 										ease: "linear",

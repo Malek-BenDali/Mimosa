@@ -56,16 +56,16 @@ export default function () {
 					/>
 				</svg>
 				<h1 className="text-linear font-semibold text-xl sm:text-3xl lg:text-6xl">
-					imosense
+					imoSense
 				</h1>
 			</div>
 			<div
 				ref={targetRef}
 				className="w-full flex flex-1 sm:justify-between justify-evenly items-center flex-col sm:flex-row linear-x h-[100vh] py-[2%] px-[8%]"
 			>
-				<p className="flex  flex-col gap-4 text-white font-normal text-center  text-3xl md:text-5xl lg:text-6xl">
-					<span>Forces ranging from heart</span>
-					<span>beat to personc scale</span>
+				<p className="flex  flex-col gap-4 text-white font-normal text-center  text-3xl md:text-5xl lg:text-5xl">
+					<span>From Heartbeat to Herculean Strength</span>
+					<span>We measure it all accurately</span>
 				</p>
 				<img
 					src={sensor}

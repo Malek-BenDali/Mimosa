@@ -1,7 +1,15 @@
 import React from "react"
 import "./App.css"
 import { motion } from "framer-motion"
-import { AddedValue, Landing, OldMan, Product } from "./Components"
+import {
+	AddedValue,
+	Journey,
+	Landing,
+	Maintenance,
+	OldMan,
+	Product,
+	Tennis,
+} from "./Components"
 //const container = {
 //	hidden: { opacity: 0, x: -100 },
 //	show: {
@@ -25,7 +33,10 @@ function App() {
 			<Landing />
 			{/*<Product />*/}
 			{/*<AddedValue />*/}
+			<Journey />
 			<OldMan />
+			<Tennis />
+			<Maintenance />
 		</div>
 	)
 }
