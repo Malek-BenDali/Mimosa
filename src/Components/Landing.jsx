@@ -3,29 +3,19 @@ import { motion, useScroll, useTransform } from "framer-motion"
 import { sensor } from "../images"
 
 export default function () {
-	const targetRef = useRef()
-	const { scrollYProgress } = useScroll({
-		targetRef,
-		offset: ["start start", "end start"],
-	})
-	const { scrollYProgress: opacityScrollY } = useScroll({
-		targetRef,
-		offset: ["start end", "end end"],
-	})
-	//capteur, "flexible electronics"
-	// range of sensitivity
-
-	const backgrounY = useTransform(scrollYProgress, [0, 1], ["0%", "150%"])
-	const textY = useTransform(scrollYProgress, [0, 1], ["0%", "300%"])
-	const opacity = useTransform(opacityScrollY, [0, 0.25, 0.7], [0, 0.1, 1])
-
 	return (
 		<>
-			<div
-				ref={targetRef}
-				className="w-full img-background flex flex-col sm:justify-between justify-evenly   linear-x h-[100vh] pt-[2%] pb-[9%] px-[22%]"
-			>
-				<div className="flex backdrop-blur   items-center">
+			<div className="w-full img-background flex flex-col sm:justify-between justify-evenly   linear-x h-[100vh] pt-[2%] pb-[9%] px-[22%]">
+				<motion.div
+					variants={{
+						initial: { opacity: 0, x: -50 },
+						visible: { opacity: 1, x: 0 },
+					}}
+					initial="initial"
+					animate="visible"
+					transition={{ delay: 0.5, duration: 0.5 }}
+					className="flex backdrop-blur   items-center"
+				>
 					<svg
 						className="lg:w-20 lg:h-20 sm:h-10 sm:w-10 h-5 w-5 "
 						viewBox="0 0 560 499"
@@ -60,9 +50,9 @@ export default function () {
 						/>
 					</svg>
 					<h1 className="text-linear font-semibold text-xl sm:text-3xl lg:text-6xl">
-						imoSense
+						ALEK Sensor
 					</h1>
-				</div>
+				</motion.div>
 				<p className="flex  flex-col gap-4 text-white font-normal   text-3xl md:text-5xl lg:text-5xl">
 					<span className="backdrop-blur rounded-lg">
 						From Heartbeat to Herculean Strength
