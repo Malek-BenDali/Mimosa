@@ -31,9 +31,9 @@ function App() {
 	return (
 		<div>
 			<Landing />
-			{/*<Product />*/}
 			{/*<AddedValue />*/}
 			<Journey />
+			<Product />
 			<OldMan />
 			<Tennis />
 			<Maintenance />

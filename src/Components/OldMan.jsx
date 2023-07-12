@@ -3,9 +3,12 @@ import { motion } from "framer-motion"
 import { sensor } from "../images"
 export default function () {
 	return (
-		<>
-			<div className=" relative  flex items-center min-h-[80vh] bg-cyan-50 px-[8%] py-5 sm:py-0 sm:flex-row flex-col sm:justify-between gap-6">
-				<div className="box-border w-full sm:w-2/6 text-blue-800 sm:text-base text-xs ">
+		<div className="min-h-[80vh] bg-gray-50 px-[8%] py-5 sm:py-0 sm:flex-row flex-col sm:justify-between gap-6">
+			<h1 className="text-3xl text-gray-800 font-medium  py-8">
+				Gain a glimpse into the immense potential of our sensor capabilities
+			</h1>
+			<div className="w-full relative justify-between flex items-center ">
+				<div className="box-border w-full sm:w-2/6 text-gray-800 sm:text-base text-xs ">
 					<h1 className="font-medium mb-3">
 						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus,
 						pariatur.
@@ -27,18 +30,6 @@ export default function () {
 						various settings.
 					</p>
 				</div>
-				{/*<motion.img
-					src={sensor}
-					className="absolute w-60 z-0 left-[47%] top-[60%]"
-					initial={{ x: 0, scale: 1, opacity: 1 }}
-					animate={{ x: 250, scale: 0, opacity: 0.1 }}
-					transition={{
-						duration: 2,
-						repeat: Infinity,
-						repeatType: "loop",
-						//repeatDelay: 5,
-					}}
-				/>*/}
 				<div className="sm:w-3/6 w-full flex items-center justify-center">
 					<svg
 						className="w-full"
@@ -748,6 +739,6 @@ export default function () {
 					</svg>
 				</div>
 			</div>
-		</>
+		</div>
 	)
 }

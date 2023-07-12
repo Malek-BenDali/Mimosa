@@ -2,15 +2,12 @@ import React from "react"
 
 export default function Journey() {
 	return (
-		<div className="min-h-[100vh] flex flex-col gap-10 max-lg:py-0 py-10 sm:px-[20%] px-[5%] bg-gray-50 text-gray-800 items-center justify-center">
-			<h1 className="text-4xl ">kolli chatgpt </h1>
+		<div className="min-h-[100vh]  flex flex-col gap-10 max-lg:py-0 py-10 sm:px-[20%] px-[5%] bg-gray-50 text-gray-800 items-center justify-center">
+			<h1 className="text-4xl text-center ">
+				<span>MimoSense Sensor</span>
+				<br /> We Unlock New Horizons in the Fields of
+			</h1>
 			<div className="border w-36  border-gray-800 rounded-3xl" />
-			<p className="text-center">
-				Join us on our path to excellence, transfering years of scientific
-				research at the Chemnitz University of Technology into a market ready
-				solution. Our primary business field will be the production and
-				distribution of nanocomposite force sensor materials.
-			</p>
 			<div className="flex flex-col gap-5 sm:gap-10">
 				<div className="flex gap-[20%] justify-between">
 					<div className="flex flex-col gap-4 justify-center items-center">

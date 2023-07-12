@@ -24,22 +24,18 @@ ul {
 }
 
 .img-background {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-		url("./images/sensor.png");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+		url("./images/SensorIRL.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
-.parallex-image {
-	background-position: bottom;
+.img-background-electronics {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.85)),
+		url("./images/bgElectronics.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
 	background-size: cover;
-}
-.parallex-image-front {
-	background-image: url("./images/sensor.png");
-}
-.parallex-image-back {
-	background-image: url("./images/sensor.png");
 }
 .style-it {
 	background: #000;
