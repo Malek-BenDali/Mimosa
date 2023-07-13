@@ -50,15 +50,24 @@ export default function () {
 						/>
 					</svg>
 					<h1 className="text-linear font-semibold text-xl sm:text-3xl lg:text-6xl">
-						ALEK Sensor
+						imoSense
 					</h1>
 				</motion.div>
-				<p className="flex  flex-col gap-4 text-white font-normal   text-3xl md:text-5xl lg:text-5xl">
+				<motion.p
+					variants={{
+						initial: { opacity: 0, y: 0 },
+						visible: { opacity: 1, y: 0 },
+					}}
+					initial="initial"
+					animate="visible"
+					transition={{ delay: 0.9, duration: 0.5 }}
+					className="flex  flex-col gap-4 text-white font-normal   text-3xl md:text-5xl lg:text-5xl"
+				>
 					<span className="backdrop-blur rounded-lg">
 						From Heartbeat to Herculean Strength
 					</span>
 					<span>We measure it all accurately</span>
-				</p>
+				</motion.p>
 				{/*<img
 					src={sensor}
 					className="drop-shadow-[0_35px_35px_rgba(0,0,0,0.5)] w-[60vw] sm:w-[40vw]"
