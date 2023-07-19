@@ -77,9 +77,9 @@ export default function Journey() {
 								indutrie 4.0
 							</h1>
 							<p className="text-center text-xs sm:text-base  text-gray-600">
-								MimoSense is upscaling the manufacturing process for
-								nanocomposite force sensors, which has so far only been proven
-								at a laboratory scale
+								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque
+								suscipit, amet voluptates praesentium sunt aut maxime est
+								commodi nihil voluptate.
 							</p>
 						</Reveal>
 					</div>
@@ -110,9 +110,9 @@ export default function Journey() {
 						<Reveal>
 							<h1 className="text-lg text-gray-700 text-center">Healthcare</h1>
 							<p className="text-center text-xs sm:text-base  text-gray-600">
-								MimoSense is upscaling the manufacturing process for
-								nanocomposite force sensors, which has so far only been proven
-								at a laboratory scale
+								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
+								ratione impedit, aliquam quam dolores quo porro asperiores cum
+								dolore harum.
 							</p>
 						</Reveal>
 					</div>
@@ -146,9 +146,9 @@ export default function Journey() {
 						<Reveal>
 							<h1 className="text-lg text-gray-700 text-center">logistics </h1>
 							<p className="text-center text-xs sm:text-base  text-gray-600">
-								NanoSen is upscaling the manufacturing process for nanocomposite
-								force sensors, which has so far only been proven at a laboratory
-								scale
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+								repellendus recusandae tempora quia natus quos nam, perspiciatis
+								cumque dolorem reiciendis!
 							</p>
 						</Reveal>
 					</div>
@@ -173,9 +173,9 @@ export default function Journey() {
 								Sports and rehabilitation
 							</h1>
 							<p className="text-center text-xs sm:text-base  text-gray-600">
-								NanoSen is upscaling the manufacturing process for nanocomposite
-								force sensors, which has so far only been proven at a laboratory
-								scale
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+								repellendus recusandae tempora quia natus quos nam, perspiciatis
+								cumque dolorem reiciendis!
 							</p>
 						</Reveal>
 					</div>
@@ -207,9 +207,9 @@ export default function Journey() {
 						<Reveal>
 							<h1 className="text-lg text-gray-700 text-center">Automotive</h1>
 							<p className="text-center text-xs sm:text-base  text-gray-600">
-								NanoSen is upscaling the manufacturing process for nanocomposite
-								force sensors, which has so far only been proven at a laboratory
-								scale
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+								repellendus recusandae tempora quia natus quos nam, perspiciatis
+								cumque dolorem reiciendis!
 							</p>
 						</Reveal>
 					</div>
@@ -227,9 +227,9 @@ export default function Journey() {
 								safety at workplace
 							</h1>
 							<p className="text-center text-xs sm:text-base  text-gray-600">
-								NanoSen is upscaling the manufacturing process for nanocomposite
-								force sensors, which has so far only been proven at a laboratory
-								scale
+								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat
+								ab sequi molestiae inventore facere, fuga tempore tenetur ipsam
+								qui quo?
 							</p>
 						</Reveal>
 					</div>

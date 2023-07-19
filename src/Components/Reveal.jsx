@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react"
 import { motion, useInView, useAnimation } from "framer-motion"
 
-export default function ({ children, variants }) {
+export default function ({ children, overlayStyle = {} }) {
 	const ref = useRef(null)
 	const isInView = useInView(ref, { once: true })
 	const mainControls = useAnimation()
@@ -27,6 +27,7 @@ export default function ({ children, variants }) {
 				{children}
 			</motion.div>
 			<motion.div
+				style={overlayStyle}
 				variants={{
 					initial: { left: 0 },
 					visible: { left: "100%" },
@@ -34,7 +35,7 @@ export default function ({ children, variants }) {
 				initial="initial"
 				animate={slideControls}
 				transition={{ duration: 0.75, ease: "easeIn" }}
-				className=" absolute top-1 bottom-1 left-0 right-0 bg-gray-400 z-20"
+				className=" absolute top-1 bottom-1 left-0 right-0 bg-gray-200 z-20"
 			></motion.div>
 		</div>
 	)

@@ -1,15 +1,36 @@
-import React from "react"
-import AddedValue from "./AddedValue"
-import { sensorIRL } from "../images"
+import React, { useEffect, useRef } from "react"
+import { motion, useInView, useAnimation } from "framer-motion"
+import Reveal from "./Reveal"
 export default function () {
+	const ref = useRef(null)
+	const isInView = useInView(ref, { once: true })
+	const mainControls = useAnimation()
+	useEffect(() => {
+		if (isInView) {
+			mainControls.start("visible")
+		}
+	}, [isInView])
 	return (
 		<div className=" img-background-electronics flex flex-col justify-between py-[5%] w-full min-h-[70vh]">
-			<h1 className="text-white text-center text-4xl font-bold ">
-				Setting new standars in flexible force sensing with our core competency
+			<h1 className="self-center w-fit text-white text-center text-4xl font-bold ">
+				<Reveal overlayStyle={{ backgroundColor: "white" }}>
+					Setting new standars in flexible force sensing with our core
+					competency
+				</Reveal>
 			</h1>
 
 			<div className="flex items-center gap-10 px-10 justify-evenly text-white">
-				<div className="flex flex-col items-center justify-center gap-5">
+				<motion.div
+					ref={ref}
+					variants={{
+						initial: { opacity: 0, x: -75, y: -75 },
+						visible: { opacity: 1, x: 0, y: 0 },
+					}}
+					initial="initial"
+					transition={{ delay: 0.5, duration: 0.5 }}
+					animate={mainControls}
+					className="flex flex-col items-center justify-center gap-5"
+				>
 					<svg
 						width="10rem"
 						viewBox="0 0 376 377"
@@ -29,8 +50,17 @@ export default function () {
 						Sensordesign <br />
 						and readout circuit
 					</h2>
-				</div>
-				<div className="flex flex-col items-center justify-center gap-5">
+				</motion.div>
+				<motion.div
+					variants={{
+						initial: { opacity: 0, y: -75 },
+						visible: { opacity: 1, y: 0 },
+					}}
+					initial="initial"
+					transition={{ delay: 0.75, duration: 0.5 }}
+					animate={mainControls}
+					className="flex flex-col items-center justify-center gap-5"
+				>
 					<svg
 						width="10rem"
 						viewBox="0 0 323 323"
@@ -44,8 +74,17 @@ export default function () {
 					</svg>
 
 					<h2 className="font-medium text-3xl">Signal processing</h2>
-				</div>
-				<div className="flex flex-col items-center justify-center gap-5">
+				</motion.div>
+				<motion.div
+					variants={{
+						initial: { opacity: 0, x: 75, y: -75 },
+						visible: { opacity: 1, x: 0, y: 0 },
+					}}
+					initial="initial"
+					transition={{ delay: 1, duration: 0.5 }}
+					animate={mainControls}
+					className="flex flex-col items-center justify-center gap-5"
+				>
 					<svg
 						width="10rem"
 						viewBox="0 0 385 340"
@@ -94,7 +133,7 @@ export default function () {
 						/>
 					</svg>
 					<h2 className="font-medium text-3xl">Software</h2>
-				</div>
+				</motion.div>
 			</div>
 		</div>
 	)

@@ -1,19 +1,51 @@
-import React from "react"
-import { motion } from "framer-motion"
-import { sensor } from "../images"
+import React, { useEffect, useRef } from "react"
+import { motion, useInView, useAnimation } from "framer-motion"
 export default function () {
+	const ref = useRef(null)
+	const isInView = useInView(ref, { once: true })
+	const mainControls = useAnimation()
+	useEffect(() => {
+		if (isInView) {
+			mainControls.start("visible")
+		}
+	}, [isInView])
 	return (
 		<>
 			<div className="min-h-[80vh] bg-gray-50 px-[8%] py-5 sm:py-0 sm:flex-row flex-col sm:justify-between gap-6">
-				<h1 className="text-3xl text-gray-800 font-medium  py-8">
-					Gain a glimpse into the immense potential of our sensor capabilities
-				</h1>
 				<div className="w-full relative justify-between flex items-center ">
 					<div className="box-border w-full sm:w-3/6 text-gray-800 sm:text-base text-xs ">
-						<h1 className="font-medium mb-3">
-							Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-							Accusamus, pariatur.
-						</h1>
+						<motion.svg
+							variants={{
+								initial: { opacity: 0, x: -75, y: -75 },
+								visible: { opacity: 1, x: 0, y: 0 },
+							}}
+							initial="initial"
+							transition={{ delay: 0.1, duration: 0.5 }}
+							animate={mainControls}
+							fill="#000000"
+							className="w-6 mb-2"
+							viewBox="0 0 242.133 242.133"
+						>
+							<path
+								id="XMLID_24_"
+								d="M190.919,212.133h-69.853c-8.284,0-15,6.716-15,15s6.716,15,15,15h106.065c8.284,0,15-6.716,15-15V121.066
+	c0-8.284-6.716-15-15-15s-15,6.716-15,15v69.854L25.607,4.394c-5.858-5.858-15.356-5.858-21.213,0
+	c-5.858,5.858-5.858,15.356,0,21.213L190.919,212.133z"
+							/>
+						</motion.svg>
+						<motion.h1
+							ref={ref}
+							variants={{
+								initial: { opacity: 0 },
+								visible: { opacity: 1 },
+							}}
+							initial="initial"
+							transition={{ delay: 0.25, duration: 0.5 }}
+							animate={mainControls}
+							className="font-medium text-xl mb-3 ml-6"
+						>
+							Technology Meets Sports: Injury Prevention Guardian
+						</motion.h1>
 						<p>
 							Introducing an innovative sensor embedded within chairs,
 							revolutionizing the way we monitor vital signs. This discreet and
@@ -31,7 +63,7 @@ export default function () {
 							various settings.
 						</p>
 					</div>
-					<div className="sm:w-3/6 w-full flex items-center justify-center">
+					<div className="sm:w-3/6 mt-20 w-full flex items-center justify-center">
 						<svg className="w-1/2" viewBox="0 0 1720 2508" fill="none">
 							<g clip-path="url(#clip0_76_2)">
 								<path
